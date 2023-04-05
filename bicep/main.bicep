@@ -7,7 +7,7 @@ param virtualNetworkAddressSpace array = [
   '10.200.202.0/24'
 ]
 param privateSubnetName string = 'snet-${userIdentifier}-weu-private-002'
-param privateSubnetAddressSpace string = '10.200.2029.0/27'
+param privateSubnetAddressSpace string = '10.200.202.0/27'
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
   name: virtualNetworkName
