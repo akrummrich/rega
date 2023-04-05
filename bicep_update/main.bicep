@@ -7,7 +7,7 @@ param virtualNetworkAddressSpace array = [
   '10.200.202.0/24'
 ]
 param privateSubnetName string = 'snet-${userIdentifier}-weu-private-002'
-param privateSubnetAddressSpace string = '10.200.200.0/27'
+param privateSubnetAddressSpace string = '10.200.202.0/27'
 
 param publicSubnetName string = 'snet-${userIdentifier}-weu-public-002'
 param publicSubnetAddressSpace string = '10.200.202.32/27'
