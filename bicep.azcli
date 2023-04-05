@@ -1,0 +1,5 @@
+az group create --location "West Europe" --name "rg-akr-bicep-test"
+
+az group deployment create --resource-group "rg-akr-bicep-test" --name "networkDeployment" --template-file ./bicep/main.bicep
+
+az group deployment create --resource-group "rg-akr-bicep-test" --name "networkDeployment" --template-file ./bicep_update/main.bicep
