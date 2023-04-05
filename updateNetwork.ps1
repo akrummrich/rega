@@ -1,8 +1,10 @@
+$userIdentifier = "akr"
+
 $location = "West Europe"
-$resourceGroupName = "rg-akr-network-weu-001"
-$virtualNetworkName = "vnet-akr-weu-001"
+$resourceGroupName = "rg-$userIdentifier-network-weu-001"
+$virtualNetworkName = "vnet-$userIdentifier-weu-001"
 $virtualNetworkNameServer = @("8.8.8.8", "1.1.1.1")
-$publicSubnetName = "snet-akr-weu-public-001"
+$publicSubnetName = "snet-$userIdentifier-weu-public-001"
 $publicSubnetAddressSpace = "10.200.200.32/27"
 
 

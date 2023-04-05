@@ -1,8 +1,10 @@
+$userIdentifier = "akr"
+
 $location = "West Europe"
-$resourceGroupName = "rg-akr-network-weu-001"
-$virtualNetworkName = "vnet-akr-weu-001"
+$resourceGroupName = "rg-$userIdentifier-network-weu-001"
+$virtualNetworkName = "vnet-$userIdentifier-weu-001"
 $virtualNetworkAddressSpace = "10.200.200.0/24"
-$privateSubnetName = "snet-akr-weu-private-001"
+$privateSubnetName = "snet-$userIdentifier-weu-private-001"
 $privateSubnetAddressSpace = "10.200.200.0/27"
 
 $rg = New-AzResourceGroup -Name $resourceGroupName -Location $location
