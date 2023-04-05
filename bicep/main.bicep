@@ -4,10 +4,10 @@ param userIdentifier string = 'akr'
 
 param virtualNetworkName string = 'vnet-${userIdentifier}-weu-002'
 param virtualNetworkAddressSpace array = [
-  '10.200.200.32/27'
+  '10.200.202.0/24'
 ]
-param privateSubnetName string = 'snet-${userIdentifier}-weu-public-002'
-param privateSubnetAddressSpace string = '10.200.200.0/27'
+param privateSubnetName string = 'snet-${userIdentifier}-weu-private-002'
+param privateSubnetAddressSpace string = '10.200.2029.0/27'
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
   name: virtualNetworkName
